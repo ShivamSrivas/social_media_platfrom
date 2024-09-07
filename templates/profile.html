@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/style./profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyNetwork</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="profile">
+            <div class="profile-header">
+                <div class="profile-pic"></div>
+                <div class="profile-info">
+                    <h1>John Doe</h1>
+                    <p>Email: john.doe@example.com</p>
+                    <button class="edit-btn">Edit Profile</button>
+                </div>
+            </div>
+
+            <section class="update-profile">
+                <h2>Update Profile</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="new-email">New Email:</label>
+                        <input type="email" id="new-email" placeholder="Enter new email">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">New Password:</label>
+                        <input type="password" id="new-password" placeholder="Enter new password">
+                    </div>
+                    <button type="submit" class="update-btn">Update</button>
+                </form>
+            </section>
+
+            <section class="posts">
+                <h2>Your Posts</h2>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="profile-pic"></div>
+                        <div class="post-info">
+                            <h3>John Doe</h3>
+                            <span>2 hours ago</span>
+                        </div>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <p>This is my first post on this awesome network!</p>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="profile-pic"></div>
+                        <div class="post-info">
+                            <h3>John Doe</h3>
+                            <span>4 hours ago</span>
+                        </div>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <p>Another great day on the network!</p>
+                </div>
+
+                <!-- Add more posts as needed -->
+            </section>
+        </main>
+
+        <aside class="right-section">
+            <!-- Optional: Right side content like friend suggestions, trending topics, etc. -->
+        </aside>
+    </div>
+</body>
+</html>

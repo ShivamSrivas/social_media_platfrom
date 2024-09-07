@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="/style/message.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyNetwork</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="messages">
+            <h1>Messages</h1>
+            <div class="message">
+                <div class="message-header">
+                    <div class="profile-pic"></div>
+                    <div class="message-info">
+                        <h3>John Doe</h3>
+                        <span>2 hours ago</span>
+                    </div>
+                </div>
+                <p>Hey, how's it going?</p>
+                <button class="reply-btn">Reply</button>
+            </div>
+
+            <div class="message">
+                <div class="message-header">
+                    <div class="profile-pic"></div>
+                    <div class="message-info">
+                        <h3>Jane Smith</h3>
+                        <span>4 hours ago</span>
+                    </div>
+                </div>
+                <p>Thanks for the update!</p>
+                <button class="reply-btn">Reply</button>
+            </div>
+
+            <!-- Add more messages as needed -->
+
+            <div class="compose-message">
+                <textarea placeholder="Write a new message..."></textarea>
+                <button class="send-btn">Send</button>
+            </div>
+        </main>
+
+        <aside class="right-section">
+            <!-- Optional: Right side content like friend suggestions, trending topics, etc. -->
+        </aside>
+    </div>
+</body>
+</html>
