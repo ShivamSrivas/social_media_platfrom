@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <link rel="stylesheet" href="/style/registration.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/registration.css') }}">
 </head>
 <body>
     <div class="container">
         <div class="login-box">
             <div class="left-section">
                 <h2>Register Now</h2>
-                <form>
+                <form action="/registration/new_registrations" method="POST">
                     <div class="input-group">
-                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Name" name="name" required>
                     </div>
                     <div class="input-group">
-                        <input type="number" placeholder="Age" required>
+                        <input type="number" placeholder="Age" name="age"  required>
                     </div>
                     <div class="input-group">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" placeholder="Email"  name="email" required>
                     </div>
                     <div class="input-group">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" name="password" required>
                     </div>
                     <button type="submit" class="login-btn">Register</button>
                 </form>
-                <div class="signup-link">
-                    <p>Already Registered? <a href="#">Login here</a></p>
-                </div>
+           <div class="signup-link">
+            <p>Already Registered? <a href="{{ url_for('login.login_page') }}">Login here</a></p>
+            </div>
             </div>
             <div class="right-section">
                 <h1>Join Us Today!</h1>

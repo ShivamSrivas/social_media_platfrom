@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Network Home</title>
-    <link rel="stylesheet" href="/style./home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/home.css')}}">
 </head>
 <body>
     <header>
-        <div class="logo">MyNetwork</div>
+        <div class="logo">{{user_name}}</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
+                <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
+                <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
+                <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
+                <li><a href="">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -31,107 +31,29 @@
         </aside>
 
         <main class="feed">
-            <div class="new-post">
-                <textarea placeholder="What's on your mind?"></textarea>
-                <button class="post-btn">Post</button>
-            </div>
+<form action="{{ url_for('home.post') }}" method="POST" class="new-post">
+        <div class="new-post">
+            <textarea placeholder="What's on your mind?" name="post_content"></textarea>
+            <button type="submit" class="post-btn">Post</button>
+        </div>
+</form>
+               {%for post in post_content%}
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
+                    <div class="post-info">
+                        <h3>{{post.name}}</h3>
+                        <span>{{post.timestamp}}</span>
+                    </div>
 
-            <div class="post">
-                <div class="post-header">
-                    <div class="profile-pic"></div>
-                    <div class="post-info">
-                        <h3>John Doe</h3>
-                        <span>2 hours ago</span>
-                    </div>
                 </div>
-                <p>This is my first post on this awesome network!</p>
+                <p>{{post.content}}</p>
                 <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
+                    <button>{{post.like}}Like</button>
                 </div>
             </div>
-
-            <div class="post">
-                <div class="post-header">
-                    <div class="profile-pic"></div>
-                    <div class="post-info">
-                        <h3>Jane Smith</h3>
-                        <span>4 hours ago</span>
-                    </div>
-                </div>
-                <p>Loving the new updates! Great job everyone.</p>
-                <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header">
-                    <div class="profile-pic"></div>
-                    <div class="post-info">
-                        <h3>Jane Smith</h3>
-                        <span>4 hours ago</span>
-                    </div>
-                </div>
-                <p>Loving the new updates! Great job everyone.</p>
-                <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header">
-                    <div class="profile-pic"></div>
-                    <div class="post-info">
-                        <h3>Jane Smith</h3>
-                        <span>4 hours ago</span>
-                    </div>
-                </div>
-                <p>Loving the new updates! Great job everyone.</p>
-                <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header">
-                    <div class="profile-pic"></div>
-                    <div class="post-info">
-                        <h3>Jane Smith</h3>
-                        <span>4 hours ago</span>
-                    </div>
-                </div>
-                <p>Loving the new updates! Great job everyone.</p>
-                <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <div class="profile-pic"></div>
-                    <div class="post-info">
-                        <h3>Jane Smith</h3>
-                        <span>4 hours ago</span>
-                    </div>
-                </div>
-                <p>Loving the new updates! Great job everyone.</p>
-                <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
-                </div>
-            </div>
+            {% endfor %}
         </main>
-
         <aside class="right-section">
             <div class="trending">
                 <h3>Trending Topics</h3>

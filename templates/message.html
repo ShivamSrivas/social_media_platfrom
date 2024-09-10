@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages</title>
-    <link rel="stylesheet" href="/style/message.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/message.css')}}">
 </head>
 <body>
     <header>
         <div class="logo">MyNetwork</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Notifications</a></li>
+                      <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
+                <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
+                <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
+                <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
             <h1>Messages</h1>
             <div class="message">
                 <div class="message-header">
-                    <div class="profile-pic"></div>
+                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
                     <div class="message-info">
                         <h3>John Doe</h3>
                         <span>2 hours ago</span>
@@ -46,7 +46,7 @@
 
             <div class="message">
                 <div class="message-header">
-                    <div class="profile-pic"></div>
+         <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
                     <div class="message-info">
                         <h3>Jane Smith</h3>
                         <span>4 hours ago</span>
@@ -55,12 +55,9 @@
                 <p>Thanks for the update!</p>
                 <button class="reply-btn">Reply</button>
             </div>
-
-            <!-- Add more messages as needed -->
-
             <div class="compose-message">
                 <textarea placeholder="Write a new message..."></textarea>
-                <button class="send-btn">Send</button>
+                <button class="send-btn">Reply</button>
             </div>
         </main>
 

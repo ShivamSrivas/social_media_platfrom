@@ -184,3 +184,71 @@ nav ul li a {
 .delete-btn:hover {
     background-color: #c0392b;
 }
+
+.posts {
+    margin: 20px 0;
+}
+
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-info {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+/* profile.css */
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.avatar-img {
+    width: 100%;
+    height: auto;
+}
+
+.post .profile-pic {
+    width: 50px;
+    height: 50px;
+}
+
+.post .avatar-img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}

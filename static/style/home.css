@@ -1,3 +1,4 @@
+/* General body and container styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header styles */
 header {
     background-color: #3498db;
     color: white;
@@ -38,11 +40,13 @@ nav ul li a {
     font-size: 16px;
 }
 
+/* Container layout */
 .container {
     display: flex;
     margin: 20px;
 }
 
+/* Sidebar styles */
 .sidebar {
     width: 20%;
     background-color: white;
@@ -53,6 +57,7 @@ nav ul li a {
 
 .sidebar ul {
     list-style: none;
+    padding: 0;
 }
 
 .sidebar ul li {
@@ -65,10 +70,11 @@ nav ul li a {
     font-size: 16px;
 }
 
+/* Main feed styles */
 .feed {
     width: 55%;
     margin: 0 20px;
-    height: 85vh; /* Adjusts the feed height to be 80% of the viewport height */
+    height: 85vh; /* Adjusts the feed height to be 85% of the viewport height */
     overflow-y: scroll; /* Enables vertical scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
     padding-right: 10px; /* Adds space to avoid content hiding behind the scrollbar */
@@ -84,7 +90,7 @@ nav ul li a {
     border-radius: 4px;
 }
 
-
+/* New post styles */
 .new-post {
     background-color: white;
     padding: 20px;
@@ -116,6 +122,7 @@ textarea {
     background-color: #2980b9;
 }
 
+/* Post styles */
 .post {
     background-color: white;
     padding: 20px;
@@ -129,12 +136,12 @@ textarea {
     align-items: center;
 }
 
-.profile-pic {
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-right: 10px;
+.avatar-img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-right: 10px; /* Space between the avatar and post info */
 }
 
 .post-info {
@@ -175,6 +182,7 @@ textarea {
     background-color: #2980b9;
 }
 
+/* Right section styles */
 .right-section {
     width: 25%;
 }
@@ -207,4 +215,17 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
+}
+
+/* Profile page specific styles */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.avatar-img {
+    height: auto;
 }

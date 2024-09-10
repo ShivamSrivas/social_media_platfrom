@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="/style./profile.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/profile.css')}}">
 </head>
 <body>
     <header>
         <div class="logo">MyNetwork</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Notifications</a></li>
+                <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
+                <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
+                <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
+                <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </nav>
@@ -32,24 +32,26 @@
 
         <main class="profile">
             <div class="profile-header">
-                <div class="profile-pic"></div>
+                <div class="profile-pic">
+                    <!-- Avatar image with class -->
+                    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
+                </div>
                 <div class="profile-info">
-                    <h1>John Doe</h1>
-                    <p>Email: john.doe@example.com</p>
-                    <button class="edit-btn">Edit Profile</button>
+                    <h1>{{data.user_name}}</h1>
+                    <p>{{data.email}}</p>
                 </div>
             </div>
 
             <section class="update-profile">
                 <h2>Update Profile</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="new-email">New Email:</label>
-                        <input type="email" id="new-email" placeholder="Enter new email">
-                    </div>
+                <form method="POST" action="/profiles/password_update">
                     <div class="form-group">
                         <label for="new-password">New Password:</label>
-                        <input type="password" id="new-password" placeholder="Enter new password">
+                        <input type="password" id="new-password" name="new_password" placeholder="Enter new password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm new password" required>
                     </div>
                     <button type="submit" class="update-btn">Update</button>
                 </form>
@@ -57,31 +59,26 @@
 
             <section class="posts">
                 <h2>Your Posts</h2>
+                {% for post in data.post_content %}
                 <div class="post">
                     <div class="post-header">
-                        <div class="profile-pic"></div>
-                        <div class="post-info">
-                            <h3>John Doe</h3>
-                            <span>2 hours ago</span>
+                        <div class="profile-pic">
+                            <!-- Avatar image with class -->
+                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
                         </div>
-                        <button class="delete-btn">Delete</button>
-                    </div>
-                    <p>This is my first post on this awesome network!</p>
-                </div>
-
-                <div class="post">
-                    <div class="post-header">
-                        <div class="profile-pic"></div>
                         <div class="post-info">
-                            <h3>John Doe</h3>
-                            <span>4 hours ago</span>
+                            <h3>{{ data.user_name }}</h3>
+                            <span>{{ post.timestamp }}</span>
                         </div>
-                        <button class="delete-btn">Delete</button>
+                        <form action="{{ url_for('profiles.delete_post') }}" method="POST" style="display:inline;">
+                            <input type="hidden" name="post_id" value="{{ post.id }}">
+                            <input type="hidden" name="timestamp" value="{{ post.timestamp }}">
+                            <button type="submit" class="delete-btn">Delete</button>
+                        </form>
                     </div>
-                    <p>Another great day on the network!</p>
+                    <p>{{ post.content }}</p>
                 </div>
-
-                <!-- Add more posts as needed -->
+                {% endfor %}
             </section>
         </main>
 

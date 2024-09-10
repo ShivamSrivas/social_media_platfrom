@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notifications</title>
-    <link rel="stylesheet" href="/style/notification.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/notification.css')}}">
 </head>
 <body>
     <header>
         <div class="logo">MyNetwork</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Notifications</a></li>
+                <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
+                <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
+                <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
+                <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </nav>
