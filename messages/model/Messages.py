@@ -1,4 +1,5 @@
 from app_registration import db
+import  datetime
 
 
 class Messages(db.Model):
@@ -6,14 +7,13 @@ class Messages(db.Model):
     user_id = db.Column(db.Integer(),nullable=False)
     email = db.Column(db.String(255),nullable=False)
     name = db.Column(db.String(255),nullable=False)
-    timestamp = db.Column(db.Datetime,nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.datetime.utcnow,nullable=False)
     message = db.Column(db.String(255),nullable=False)
 
-    def __init__(self,user_id,name,email,timestamp,message):
+    def __init__(self,user_id,name,email,message):
         self.user_id = user_id
         self.name = name
         self.email = email
-        self.timestamp = timestamp
         self.message = message
 
     def __repr__(self):

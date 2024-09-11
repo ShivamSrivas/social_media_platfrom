@@ -17,7 +17,7 @@ def logger(path: str, message: str, intention: str):
     log.basicConfig(
         filename=path,
         level=log.DEBUG,  # Log all levels from DEBUG and above
-        format='%(asctime)s - %(levelname)s - %(messages)s',
+        format='%(asctime)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
 

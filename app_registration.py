@@ -1,17 +1,18 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from flask_wtf.csrf import CSRFProtect
 import secrets
+from utlis import logger
 import logging
 from logging.handlers import RotatingFileHandler
 
-# Initialize SQLAlchemy and Migrate instances
+
 db = SQLAlchemy()
 migrate = Migrate()
 
 
 def create_app():
+    logger('logs/login.log','create_app function called','INFO')
     """
     Application factory that configures and returns the Flask app instance.
     """
@@ -50,5 +51,5 @@ def create_app():
         handler = RotatingFileHandler('error.log', maxBytes=10000, backupCount=1)
         handler.setLevel(logging.ERROR)
         app.logger.addHandler(handler)
-
+    logger('logs/login.log','create_app returning  app','INFO')
     return app

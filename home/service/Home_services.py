@@ -14,10 +14,7 @@ class HomeServices:
         if user_id is None:
             return {"status": False, "messages": "User not logged in"}
 
-        # Get the current timestamp
         current_timestamp = datetime.datetime.now()
-
-        # Create a new post
         post = Post(user_id=user_id, content=self.post_content, name=user_name, like='', timestamp=current_timestamp)
         try:
             db.session.add(post)

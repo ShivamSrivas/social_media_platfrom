@@ -11,7 +11,7 @@
         <div class="logo">MyNetwork</div>
         <nav>
             <ul>
-                      <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
+                <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
                 <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
                 <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
                 <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
@@ -32,32 +32,24 @@
 
         <main class="messages">
             <h1>Messages</h1>
-            <div class="message">
-                <div class="message-header">
-                                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
-                    <div class="message-info">
-                        <h3>John Doe</h3>
-                        <span>2 hours ago</span>
-                    </div>
-                </div>
-                <p>Hey, how's it going?</p>
-                <button class="reply-btn">Reply</button>
-            </div>
-
+            {%for msg in data%}
             <div class="message">
                 <div class="message-header">
          <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
                     <div class="message-info">
-                        <h3>Jane Smith</h3>
-                        <span>4 hours ago</span>
+                        <h3>{{msg.name}}</h3>
+                        <span>{{msg.timestamp}}</span>
                     </div>
                 </div>
-                <p>Thanks for the update!</p>
-                <button class="reply-btn">Reply</button>
+                <p>{{msg.message}}</p>
             </div>
+            {% endfor %}
+
             <div class="compose-message">
-                <textarea placeholder="Write a new message..."></textarea>
-                <button class="send-btn">Reply</button>
+                <form action="/messages/add_message" method="POST">
+                <textarea placeholder="Write a new message..." name="message"></textarea>
+                <button class="send-btn" type="submit">Reply</button>
+            </form>
             </div>
         </main>
 
