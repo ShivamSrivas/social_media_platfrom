@@ -1,4 +1,4 @@
-/* General body and container styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header styles */
+
 header {
     background-color: #3498db;
     color: white;
@@ -40,13 +40,13 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Container layout */
+
 .container {
-    display: flex;
+
     margin: 20px;
 }
 
-/* Sidebar styles */
+
 .sidebar {
     width: 20%;
     background-color: white;
@@ -69,18 +69,19 @@ nav ul li a {
     color: #333;
     font-size: 16px;
 }
-
-/* Main feed styles */
-.feed {
-    width: 55%;
-    margin: 0 20px;
-    height: 85vh; /* Adjusts the feed height to be 85% of the viewport height */
-    overflow-y: scroll; /* Enables vertical scrolling */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    padding-right: 10px; /* Adds space to avoid content hiding behind the scrollbar */
+.textarea{
+width:100%
 }
 
-/* Optional: Styling for scrollbar */
+.feed {
+    width: 100%;
+    margin: 0 20px;
+    height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
 .feed::-webkit-scrollbar {
     width: 8px;
 }
@@ -90,18 +91,22 @@ nav ul li a {
     border-radius: 4px;
 }
 
-/* New post styles */
 .new-post {
     background-color: white;
+    display:flex;
+    align-self:center;
+    flex-direction:column;
     padding: 20px;
+    width:70%;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 textarea {
-    width: 100%;
+    width: 85%;
     padding: 10px;
+    height:10vh;
     border-radius: 4px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -112,6 +117,8 @@ textarea {
     padding: 10px 20px;
     background-color: #3498db;
     border: none;
+    width:10%;
+    align-self:end;
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -122,7 +129,6 @@ textarea {
     background-color: #2980b9;
 }
 
-/* Post styles */
 .post {
     background-color: white;
     padding: 20px;
@@ -137,11 +143,11 @@ textarea {
 }
 
 .avatar-img {
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    margin-right: 10px; /* Space between the avatar and post info */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 .post-info {
@@ -189,6 +195,7 @@ textarea {
 
 .trending, .friend-suggestions {
     background-color: white;
+    width:25%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -217,7 +224,6 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Profile page specific styles */
 .profile-pic {
     width: 80px;
     height: 80px;
@@ -228,4 +234,11 @@ ul li a:hover {
 
 .avatar-img {
     height: auto;
+}
+
+.upper-container{
+display:flex;
+margin:0.5%;
+
+justify-content:space-evenly;
 }

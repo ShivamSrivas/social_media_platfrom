@@ -1,8 +1,9 @@
 from app_registration import db
 from registration.models.Users import Users
-
+from utlis import  logger
 
 class RegistrationService:
+    logger('logs/registration.log', 'RegistrationService  initiated', 'INFO')
     def __init__(self, name, age, email, password):
         self.name = name
         self.age = age
@@ -10,8 +11,8 @@ class RegistrationService:
         self.password = password
 
     def register(self):
+        logger('logs/registration.log', 'register  method called', 'INFO')
         try:
-            # Create a new Registration instance
             users = Users(
                 name=self.name,
                 age=self.age,
@@ -20,12 +21,11 @@ class RegistrationService:
             )
             db.session.add(users)
             db.session.commit()
-            return {"msg": 'Successfully registered'}
+            logger('logs/registration.log', 'Users Successfully registered', 'INFO')
+            return {"status":True,"message": 'Successfully registered'}
         except Exception as e:
-            # Rollback in case of an error
             db.session.rollback()
-            print(f"An error occurred: {e}")
-            return {"msg": f"An error occurred: {e}"}
+            logger('logs/registration.log', f"An error occurred: {e}", 'INFO')
+            return {'status':False,"message": f"An error occurred: {e}"}
         finally:
-            # Ensure that the session is always closed
             db.session.close()

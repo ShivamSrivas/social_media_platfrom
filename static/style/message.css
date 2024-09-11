@@ -1,4 +1,4 @@
-/* Base styles for layout and typography */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     font-size: 16px;
 }
 
-/* Header styles */
 header {
     background-color: #3498db;
     color: white;
@@ -41,13 +40,11 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Container for main layout */
 .container {
     display: flex;
     margin: 20px;
 }
 
-/* Sidebar styles */
 .sidebar {
     width: 20%;
     background-color: white;
@@ -70,7 +67,7 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Main content area for messages */
+
 main.messages {
     width: 60%;
     margin: 0 20px;
@@ -81,7 +78,6 @@ main.messages {
     font-size: 24px;
 }
 
-/* Message item styles */
 .message {
     background-color: white;
     padding: 15px;
@@ -96,6 +92,10 @@ main.messages {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+.scroll-container {
+    height : 60vh;
+    overflow-y : scroll;
 }
 
 .profile-pic {
@@ -134,7 +134,10 @@ main.messages {
     background-color: #2980b9;
 }
 
-/* Compose message section */
+.message-head{
+}
+
+
 .compose-message {
     background-color: white;
     padding: 15px;
@@ -151,8 +154,8 @@ main.messages {
     border-radius: 4px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-    height: 100px; /* Adjust height as needed */
-    resize: none; /* Prevent resizing */
+    height: 100px;
+    resize: none;
 }
 
 .send-btn {
@@ -175,7 +178,6 @@ main.messages {
     border-radius: 50%;
     background-color: #ccc;
 }
-/* profile.css */
 
 .profile-pic {
     width: 80px;
@@ -196,10 +198,10 @@ main.messages {
 }
 
 .post .avatar-img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
-/* General body and container styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -212,7 +214,6 @@ body {
     margin: 20px;
 }
 
-/* Sidebar styles */
 .sidebar {
     width: 200px;
     background-color: #f4f4f4;
@@ -233,7 +234,6 @@ body {
     color: #333;
 }
 
-/* Main content styles */
 main.messages {
     flex: 1;
     padding: 20px;
@@ -257,15 +257,14 @@ main.messages {
     margin-right: 10px;
 }
 
-/* Avatar image styles */
+
 .avatar-img {
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-/* Message info styles */
 .message-info {
     flex: 1;
 }
@@ -279,7 +278,6 @@ main.messages {
     color: #888;
 }
 
-/* Button styles */
 .reply-btn, .send-btn {
     background-color: #007bff;
     color: white;
@@ -293,7 +291,6 @@ main.messages {
     background-color: #0056b3;
 }
 
-/* Compose message styles */
 .compose-message {
     margin-top: 20px;
 }

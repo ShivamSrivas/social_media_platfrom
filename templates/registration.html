@@ -11,7 +11,7 @@
         <div class="login-box">
             <div class="left-section">
                 <h2>Register Now</h2>
-                <form action="/registration/new_registrations" method="POST">
+                <form action="{{url_for('registration.new_registration')}}" method="POST">
                     <div class="input-group">
                         <input type="text" placeholder="Name" name="name" required>
                     </div>

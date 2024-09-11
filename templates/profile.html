@@ -8,32 +8,21 @@
 </head>
 <body>
     <header>
-        <div class="logo">MyNetwork</div>
+        <div class="logo">Profile</div>
         <nav>
             <ul>
                 <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
                 <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
                 <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
-                <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="{{url_for('login.login_page')}}">Logout</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Friends</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </aside>
-
         <main class="profile">
             <div class="profile-header">
                 <div class="profile-pic">
-                    <!-- Avatar image with class -->
                     <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
                 </div>
                 <div class="profile-info">
@@ -44,7 +33,7 @@
 
             <section class="update-profile">
                 <h2>Update Profile</h2>
-                <form method="POST" action="/profiles/password_update">
+                <form method="POST" action="{{url_for('profiles.password_update')}}">
                     <div class="form-group">
                         <label for="new-password">New Password:</label>
                         <input type="password" id="new-password" name="new_password" placeholder="Enter new password" required>
@@ -63,7 +52,6 @@
                 <div class="post">
                     <div class="post-header">
                         <div class="profile-pic">
-                            <!-- Avatar image with class -->
                             <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="avatar-img">
                         </div>
                         <div class="post-info">
@@ -83,7 +71,6 @@
         </main>
 
         <aside class="right-section">
-            <!-- Optional: Right side content like friend suggestions, trending topics, etc. -->
         </aside>
     </div>
 </body>

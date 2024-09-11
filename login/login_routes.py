@@ -18,7 +18,6 @@ def get_details():
         if request.method == 'POST':
             email = request.form.get('email')
             password = request.form.get('password')
-
             login_services = LoginServices(email, password)
             flag = login_services.get_details()
             if flag['status']:

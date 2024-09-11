@@ -31,7 +31,6 @@ def create_app():
     from login.login_routes import login_bp
     from home.home_routes import home_bp
     from messages.message_routes import message_bp
-    from notifications.notification_routes import notifications_bp
     from profiles.profile_routes import profile_bp
 
     # Initialize database and migration extensions
@@ -43,7 +42,6 @@ def create_app():
     app.register_blueprint(registration_bp, url_prefix='/registration')
     app.register_blueprint(home_bp, url_prefix='/home')
     app.register_blueprint(message_bp, url_prefix='/messages')
-    app.register_blueprint(notifications_bp, url_prefix='/notifications')
     app.register_blueprint(profile_bp, url_prefix='/profiles')
 
     # Setup logging

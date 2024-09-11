@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, Response, session
+from flask import Blueprint, render_template, request, Response, session, redirect, url_for
 from home.service.Home_services import HomeServices
 from home.model.Post import Post
 
@@ -18,10 +18,37 @@ def home_page():
 @home_bp.route('/post', methods=['Post'])
 def post():
     try:
+        response = None
         if request.method == 'POST':
             post_content = request.form.get('post_content')
             home_services = HomeServices(post_content)
             response = home_services.add_post()
-            return Response(f"post_content is : {response}", status=200)
+            if response['status']:
+                return redirect(url_for('home.home_page'))
+        return Response(f"post_content ends with an error {response['messages']}", status=500)
     except Exception as error:
         return Response(f"Error occurred: {error}", status=500)
+
+
+@home_bp.route("/ai_update")
+def ai_updates():
+    try:
+        return render_template('ai_update.html')
+    except Exception as error:
+        return Response(f"there's an error saying str{error}", status=500)
+
+
+@home_bp.route("/climate_change_news")
+def climate_change_news():
+    try:
+        return render_template('climate_change_news.html')
+    except Exception as error:
+        return Response(f"there's an error saying str{error}", status=500)
+
+
+@home_bp.route("/tech_news")
+def tech_news():
+    try:
+        return render_template('tech_news.html')
+    except Exception as error:
+        return Response(f"there's an error saying str{error}", status=500)

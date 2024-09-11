@@ -1,38 +1,525 @@
-2024-09-10 19:28:52 - INFO - create_app function called
-2024-09-10 19:28:52 - INFO - create_app returning  app
-2024-09-10 19:28:52 - WARNING -  * Debugger is active!
-2024-09-10 19:28:52 - INFO -  * Debugger PIN: 516-966-723
-2024-09-10 19:29:02 - INFO - create_app function called
-2024-09-10 19:29:02 - INFO - create_app returning  app
-2024-09-10 19:29:02 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-09-11 06:38:30 - INFO - 127.0.0.1 - - [11/Sep/2024 06:38:30] "GET / HTTP/1.1" 200 -
+2024-09-11 06:38:30 - INFO - 127.0.0.1 - - [11/Sep/2024 06:38:30] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:38:31 - INFO - get_details method called
+2024-09-11 06:38:31 - INFO - User found
+2024-09-11 06:38:31 - INFO - 127.0.0.1 - - [11/Sep/2024 06:38:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 06:38:31 - INFO - 127.0.0.1 - - [11/Sep/2024 06:38:31] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:38:32 - INFO - 127.0.0.1 - - [11/Sep/2024 06:38:32] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:42:03 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\home_routes.py', reloading
+2024-09-11 06:42:03 - INFO -  * Restarting with stat
+2024-09-11 06:42:04 - INFO - create_app function called
+2024-09-11 06:42:04 - INFO - RegistrationService  initiated
+2024-09-11 06:42:04 - INFO - LoginServices initiated 
+2024-09-11 06:42:04 - INFO - Home initiated
+2024-09-11 06:42:04 - INFO - MessageServices  initiated
+2024-09-11 06:42:04 - INFO - ProfileServices  initiated
+2024-09-11 06:42:04 - INFO - create_app returning  app
+2024-09-11 06:42:04 - WARNING -  * Debugger is active!
+2024-09-11 06:42:04 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:42:08 - INFO - get_details method called
+2024-09-11 06:42:09 - ERROR - User not found
+2024-09-11 06:42:09 - INFO - 127.0.0.1 - - [11/Sep/2024 06:42:09] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 06:42:12 - INFO - get_details method called
+2024-09-11 06:42:12 - ERROR - User not found
+2024-09-11 06:42:12 - INFO - 127.0.0.1 - - [11/Sep/2024 06:42:12] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 06:42:15 - INFO - 127.0.0.1 - - [11/Sep/2024 06:42:15] "GET / HTTP/1.1" 200 -
+2024-09-11 06:42:16 - INFO - 127.0.0.1 - - [11/Sep/2024 06:42:16] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:42:23 - INFO - add_post method called
+2024-09-11 06:42:23 - INFO - 127.0.0.1 - - [11/Sep/2024 06:42:23] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:42:26 - INFO - add_post method called
+2024-09-11 06:42:26 - INFO - 127.0.0.1 - - [11/Sep/2024 06:42:26] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:43:11 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\home_routes.py', reloading
+2024-09-11 06:43:11 - INFO -  * Restarting with stat
+2024-09-11 06:43:12 - INFO - create_app function called
+2024-09-11 06:43:12 - INFO - RegistrationService  initiated
+2024-09-11 06:43:12 - INFO - LoginServices initiated 
+2024-09-11 06:43:12 - INFO - Home initiated
+2024-09-11 06:43:12 - INFO - MessageServices  initiated
+2024-09-11 06:43:12 - INFO - ProfileServices  initiated
+2024-09-11 06:43:12 - INFO - create_app returning  app
+2024-09-11 06:43:12 - WARNING -  * Debugger is active!
+2024-09-11 06:43:12 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:43:15 - INFO - create_app function called
+2024-09-11 06:43:15 - INFO - RegistrationService  initiated
+2024-09-11 06:43:15 - INFO - LoginServices initiated 
+2024-09-11 06:43:15 - INFO - Home initiated
+2024-09-11 06:43:15 - INFO - MessageServices  initiated
+2024-09-11 06:43:15 - INFO - ProfileServices  initiated
+2024-09-11 06:43:15 - INFO - create_app returning  app
+2024-09-11 06:43:15 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2024-09-10 19:29:02 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-10 19:29:02 - INFO -  * Restarting with stat
-2024-09-10 19:29:03 - INFO - create_app function called
-2024-09-10 19:29:03 - INFO - create_app returning  app
-2024-09-10 19:29:03 - WARNING -  * Debugger is active!
-2024-09-10 19:29:03 - INFO -  * Debugger PIN: 516-966-723
-2024-09-10 19:30:04 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\utlis.py', reloading
-2024-09-10 19:30:04 - INFO -  * Restarting with stat
-2024-09-10 19:30:06 - INFO - create_app function called
-2024-09-10 19:30:06 - INFO - create_app returning  app
-2024-09-10 19:30:06 - WARNING -  * Debugger is active!
-2024-09-10 19:30:06 - INFO -  * Debugger PIN: 516-966-723
-2024-09-10 19:30:10 - INFO - create_app function called
-2024-09-10 19:30:10 - INFO - create_app returning  app
-2024-09-10 19:30:10 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-09-11 06:43:15 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-11 06:43:15 - INFO -  * Restarting with stat
+2024-09-11 06:43:16 - INFO - create_app function called
+2024-09-11 06:43:16 - INFO - RegistrationService  initiated
+2024-09-11 06:43:16 - INFO - LoginServices initiated 
+2024-09-11 06:43:16 - INFO - Home initiated
+2024-09-11 06:43:16 - INFO - MessageServices  initiated
+2024-09-11 06:43:16 - INFO - ProfileServices  initiated
+2024-09-11 06:43:16 - INFO - create_app returning  app
+2024-09-11 06:43:16 - WARNING -  * Debugger is active!
+2024-09-11 06:43:16 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:43:20 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:20] "GET / HTTP/1.1" 200 -
+2024-09-11 06:43:20 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:20] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:22 - INFO - get_details method called
+2024-09-11 06:43:22 - INFO - User found
+2024-09-11 06:43:22 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 06:43:22 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:22] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:43:22 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:22] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:28 - INFO - add_post method called
+2024-09-11 06:43:28 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:28] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:28 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:28] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:43:28 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:28] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:36 - INFO - add_post method called
+2024-09-11 06:43:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:36] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:36] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:43:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:36] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:41 - INFO - add_post method called
+2024-09-11 06:43:41 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:41] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:41 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:41] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:43:41 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:41] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:48 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:48] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:43:48 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:48] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:54 - INFO - delete_post  method called
+2024-09-11 06:43:54 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:54] "[32mPOST /profiles/delete_post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:54 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:54] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:43:54 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:54] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:55 - INFO - delete_post  method called
+2024-09-11 06:43:55 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:55] "[32mPOST /profiles/delete_post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:55 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:55] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:43:55 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:55] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:57 - INFO - delete_post  method called
+2024-09-11 06:43:57 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:57] "[32mPOST /profiles/delete_post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:57 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:57] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:43:57 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:57] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:58 - INFO - delete_post  method called
+2024-09-11 06:43:58 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:58] "[32mPOST /profiles/delete_post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:58 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:58] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:43:58 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:58] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:43:59 - INFO - delete_post  method called
+2024-09-11 06:43:59 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:59] "[32mPOST /profiles/delete_post HTTP/1.1[0m" 302 -
+2024-09-11 06:43:59 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:59] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:43:59 - INFO - 127.0.0.1 - - [11/Sep/2024 06:43:59] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:00 - INFO - delete_post  method called
+2024-09-11 06:44:00 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:00] "[32mPOST /profiles/delete_post HTTP/1.1[0m" 302 -
+2024-09-11 06:44:00 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:00] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:44:00 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:00] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:01 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:01] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:44:01 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:01] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:10 - INFO - add_post method called
+2024-09-11 06:44:10 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:10] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:44:10 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:10] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:44:10 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:10] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:12 - INFO - get_all_message  method called
+2024-09-11 06:44:12 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:12] "GET /messages/message_page HTTP/1.1" 200 -
+2024-09-11 06:44:12 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:12] "[36mGET /static/style/message.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:17 - INFO - add_messages  method called
+2024-09-11 06:44:17 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:17] "[32mPOST /messages/add_message HTTP/1.1[0m" 302 -
+2024-09-11 06:44:17 - INFO - get_all_message  method called
+2024-09-11 06:44:17 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:17] "GET /messages/message_page HTTP/1.1" 200 -
+2024-09-11 06:44:17 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:17] "[36mGET /static/style/message.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:32 - INFO - add_messages  method called
+2024-09-11 06:44:32 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:32] "[32mPOST /messages/add_message HTTP/1.1[0m" 302 -
+2024-09-11 06:44:32 - INFO - get_all_message  method called
+2024-09-11 06:44:32 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:32] "GET /messages/message_page HTTP/1.1" 200 -
+2024-09-11 06:44:33 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:33] "[36mGET /static/style/message.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:36] "GET /notifications/notifications_page HTTP/1.1" 200 -
+2024-09-11 06:44:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:36] "[36mGET /static/style/notification.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:36 - INFO - get_all_message  method called
+2024-09-11 06:44:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:36] "GET /messages/message_page HTTP/1.1" 200 -
+2024-09-11 06:44:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:37] "[36mGET /static/style/message.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:38] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:44:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:38] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:38] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:44:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:38] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:40 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:40] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:44:40 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:40] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:44:56 - INFO - get_all_message  method called
+2024-09-11 06:44:56 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:56] "GET /messages/message_page HTTP/1.1" 200 -
+2024-09-11 06:44:56 - INFO - 127.0.0.1 - - [11/Sep/2024 06:44:56] "[36mGET /static/style/message.css HTTP/1.1[0m" 304 -
+2024-09-11 06:45:06 - INFO - 127.0.0.1 - - [11/Sep/2024 06:45:06] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:45:06 - INFO - 127.0.0.1 - - [11/Sep/2024 06:45:06] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:45:56 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\utlis.py', reloading
+2024-09-11 06:45:56 - INFO -  * Restarting with stat
+2024-09-11 06:47:09 - INFO -  * Restarting with stat
+2024-09-11 06:47:11 - INFO - create_app function called
+2024-09-11 06:47:11 - INFO - RegistrationService  initiated
+2024-09-11 06:47:11 - INFO - LoginServices initiated 
+2024-09-11 06:47:11 - INFO - Home initiated
+2024-09-11 06:47:11 - INFO - MessageServices  initiated
+2024-09-11 06:47:11 - INFO - ProfileServices  initiated
+2024-09-11 06:47:11 - INFO - create_app returning  app
+2024-09-11 06:47:11 - WARNING -  * Debugger is active!
+2024-09-11 06:47:11 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:47:28 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\utlis.py', reloading
+2024-09-11 06:47:28 - INFO -  * Restarting with stat
+2024-09-11 06:47:30 - INFO - create_app function called
+2024-09-11 06:47:30 - INFO - RegistrationService  initiated
+2024-09-11 06:47:30 - INFO - LoginServices initiated 
+2024-09-11 06:47:30 - INFO - Home initiated
+2024-09-11 06:47:30 - INFO - MessageServices  initiated
+2024-09-11 06:47:30 - INFO - ProfileServices  initiated
+2024-09-11 06:47:30 - INFO - create_app returning  app
+2024-09-11 06:47:30 - WARNING -  * Debugger is active!
+2024-09-11 06:47:30 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:47:30 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:30] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:47:30 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:30] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:47:34 - INFO - add_post method called
+2024-09-11 06:47:34 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:34] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:47:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:37] "GET / HTTP/1.1" 200 -
+2024-09-11 06:47:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:37] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:47:39 - INFO - get_details method called
+2024-09-11 06:47:39 - INFO - User found
+2024-09-11 06:47:39 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 06:47:39 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:39] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:47:39 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:39] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:47:43 - INFO - add_post method called
+2024-09-11 06:47:43 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:43] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:47:43 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:43] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:47:43 - INFO - 127.0.0.1 - - [11/Sep/2024 06:47:43] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:48:16 - INFO - add_post method called
+2024-09-11 06:48:16 - INFO - 127.0.0.1 - - [11/Sep/2024 06:48:16] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:48:16 - INFO - 127.0.0.1 - - [11/Sep/2024 06:48:16] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:48:17 - INFO - 127.0.0.1 - - [11/Sep/2024 06:48:17] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:00 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\service\\Home_services.py', reloading
+2024-09-11 06:49:00 - INFO -  * Restarting with stat
+2024-09-11 06:49:01 - INFO - create_app function called
+2024-09-11 06:49:01 - INFO - RegistrationService  initiated
+2024-09-11 06:49:01 - INFO - LoginServices initiated 
+2024-09-11 06:49:01 - INFO - Home initiated
+2024-09-11 06:49:01 - INFO - MessageServices  initiated
+2024-09-11 06:49:01 - INFO - ProfileServices  initiated
+2024-09-11 06:49:01 - INFO - create_app returning  app
+2024-09-11 06:49:01 - WARNING -  * Debugger is active!
+2024-09-11 06:49:01 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:49:04 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:04] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:49:04 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:04] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:08 - INFO - add_post method called
+2024-09-11 06:49:08 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:08] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:49:13 - INFO - add_post method called
+2024-09-11 06:49:13 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:13] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:49:18 - INFO - add_post method called
+2024-09-11 06:49:18 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:18] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:49:21 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:21] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:49:21 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:21] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:24 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:24] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:49:24 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:24] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:27 - INFO - get_all_message  method called
+2024-09-11 06:49:27 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:27] "GET /messages/message_page HTTP/1.1" 200 -
+2024-09-11 06:49:27 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:27] "[36mGET /static/style/message.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:28 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:28] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:49:29 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:29] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:33 - INFO - add_post method called
+2024-09-11 06:49:33 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:33] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:49:55 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:55] "GET / HTTP/1.1" 200 -
+2024-09-11 06:49:55 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:55] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:49:58 - INFO - get_details method called
+2024-09-11 06:49:58 - INFO - User found
+2024-09-11 06:49:58 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 06:49:58 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:58] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:49:58 - INFO - 127.0.0.1 - - [11/Sep/2024 06:49:58] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:50:04 - INFO - add_post method called
+2024-09-11 06:50:04 - INFO - 127.0.0.1 - - [11/Sep/2024 06:50:04] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:50:04 - INFO - 127.0.0.1 - - [11/Sep/2024 06:50:04] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:50:04 - INFO - 127.0.0.1 - - [11/Sep/2024 06:50:04] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:50:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:50:36] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:50:36 - INFO - 127.0.0.1 - - [11/Sep/2024 06:50:36] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:51:41 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\service\\Home_services.py', reloading
+2024-09-11 06:51:41 - INFO -  * Restarting with stat
+2024-09-11 06:51:43 - INFO - create_app function called
+2024-09-11 06:51:43 - INFO - RegistrationService  initiated
+2024-09-11 06:51:43 - INFO - LoginServices initiated 
+2024-09-11 06:51:43 - INFO - Home initiated
+2024-09-11 06:51:43 - INFO - MessageServices  initiated
+2024-09-11 06:51:43 - INFO - ProfileServices  initiated
+2024-09-11 06:51:43 - INFO - create_app returning  app
+2024-09-11 06:51:43 - WARNING -  * Debugger is active!
+2024-09-11 06:51:43 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:51:46 - INFO - add_post method called
+2024-09-11 06:51:46 - INFO - 127.0.0.1 - - [11/Sep/2024 06:51:46] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:52:09 - INFO - add_post method called
+2024-09-11 06:52:09 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:09] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:52:17 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:17] "GET / HTTP/1.1" 200 -
+2024-09-11 06:52:17 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:17] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:52:20 - INFO - get_details method called
+2024-09-11 06:52:20 - INFO - User found
+2024-09-11 06:52:20 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 06:52:20 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:20] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:52:20 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:20] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:52:38 - INFO - add_post method called
+2024-09-11 06:52:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:38] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:52:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:38] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:52:38 - INFO - 127.0.0.1 - - [11/Sep/2024 06:52:38] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:53:32 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\home_routes.py', reloading
+2024-09-11 06:53:32 - INFO -  * Restarting with stat
+2024-09-11 06:53:33 - INFO - create_app function called
+2024-09-11 06:53:33 - INFO - RegistrationService  initiated
+2024-09-11 06:53:33 - INFO - LoginServices initiated 
+2024-09-11 06:53:33 - INFO - Home initiated
+2024-09-11 06:53:33 - INFO - MessageServices  initiated
+2024-09-11 06:53:33 - INFO - ProfileServices  initiated
+2024-09-11 06:53:34 - INFO - create_app returning  app
+2024-09-11 06:53:34 - WARNING -  * Debugger is active!
+2024-09-11 06:53:34 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:53:37 - INFO - add_post method called
+2024-09-11 06:53:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:53:37] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:54:02 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\home_routes.py', reloading
+2024-09-11 06:54:02 - INFO -  * Restarting with stat
+2024-09-11 06:54:03 - INFO - create_app function called
+2024-09-11 06:54:03 - INFO - RegistrationService  initiated
+2024-09-11 06:54:03 - INFO - LoginServices initiated 
+2024-09-11 06:54:04 - INFO - Home initiated
+2024-09-11 06:54:04 - INFO - MessageServices  initiated
+2024-09-11 06:54:04 - INFO - ProfileServices  initiated
+2024-09-11 06:54:04 - INFO - create_app returning  app
+2024-09-11 06:54:04 - WARNING -  * Debugger is active!
+2024-09-11 06:54:04 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 06:54:05 - INFO - add_post method called
+2024-09-11 06:54:05 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:05] "[35m[1mPOST /home/post HTTP/1.1[0m" 500 -
+2024-09-11 06:54:10 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:10] "GET / HTTP/1.1" 200 -
+2024-09-11 06:54:10 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:10] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:12 - INFO - get_details method called
+2024-09-11 06:54:12 - INFO - User found
+2024-09-11 06:54:12 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 06:54:12 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:12] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:12 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:12] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:14 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:14] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:14 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:14] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:18 - INFO - add_post method called
+2024-09-11 06:54:18 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:18] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:54:18 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:18] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:18 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:18] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:21 - INFO - add_post method called
+2024-09-11 06:54:21 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:21] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:54:21 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:21] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:21 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:21] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:22 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:22] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:22 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:22] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:24 - INFO - add_post method called
+2024-09-11 06:54:24 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:24] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:54:24 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:24] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:25 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:25] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:26 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:26] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:26 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:26] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:29 - INFO - add_post method called
+2024-09-11 06:54:29 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:29] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:54:29 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:29] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:29 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:29] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:31 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:31] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:31 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:31] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:31 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:31] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:31 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:31] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:32 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:32] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:32 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:32] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:33 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:33] "GET /profiles/profile_page HTTP/1.1" 200 -
+2024-09-11 06:54:34 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:34] "[36mGET /static/style/profile.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:35 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:35] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:35 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:35] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 06:54:37 - INFO - add_post method called
+2024-09-11 06:54:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:37] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 06:54:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:37] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 06:54:37 - INFO - 127.0.0.1 - - [11/Sep/2024 06:54:37] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 08:06:23 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\utlis.py', reloading
+2024-09-11 08:06:24 - INFO -  * Restarting with stat
+2024-09-11 08:06:26 - INFO - create_app function called
+2024-09-11 08:06:26 - INFO - RegistrationService  initiated
+2024-09-11 08:06:26 - INFO - LoginServices initiated 
+2024-09-11 08:06:43 - INFO - create_app function called
+2024-09-11 08:06:43 - INFO - RegistrationService  initiated
+2024-09-11 08:06:43 - INFO - LoginServices initiated 
+2024-09-11 08:07:31 - INFO - create_app function called
+2024-09-11 08:07:31 - INFO - RegistrationService  initiated
+2024-09-11 08:07:31 - INFO - LoginServices initiated 
+2024-09-11 08:07:31 - INFO - Home initiated
+2024-09-11 08:07:31 - INFO - MessageServices  initiated
+2024-09-11 08:07:31 - INFO - ProfileServices  initiated
+2024-09-11 08:07:32 - INFO - create_app returning  app
+2024-09-11 08:07:32 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2024-09-10 19:30:10 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-10 19:30:10 - INFO -  * Restarting with stat
-2024-09-10 19:30:11 - INFO - create_app function called
-2024-09-10 19:30:11 - INFO - create_app returning  app
-2024-09-10 19:30:11 - WARNING -  * Debugger is active!
-2024-09-10 19:30:11 - INFO -  * Debugger PIN: 516-966-723
-2024-09-10 19:36:12 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\login\\service\\Login_services.py', reloading
-2024-09-10 19:36:12 - INFO -  * Restarting with stat
-2024-09-10 19:36:13 - INFO - create_app function called
-2024-09-10 19:36:13 - INFO - LoginServices initiated 
-2024-09-10 19:36:13 - INFO - create_app returning  app
-2024-09-10 19:36:13 - WARNING -  * Debugger is active!
-2024-09-10 19:36:13 - INFO -  * Debugger PIN: 516-966-723
-2024-09-10 20:05:55 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\home\\service\\Home_services.py', reloading
+2024-09-11 08:07:32 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-11 08:07:32 - INFO -  * Restarting with stat
+2024-09-11 08:07:32 - INFO - create_app function called
+2024-09-11 08:07:32 - INFO - RegistrationService  initiated
+2024-09-11 08:07:32 - INFO - LoginServices initiated 
+2024-09-11 08:07:32 - INFO - Home initiated
+2024-09-11 08:07:32 - INFO - MessageServices  initiated
+2024-09-11 08:07:32 - INFO - ProfileServices  initiated
+2024-09-11 08:07:32 - INFO - create_app returning  app
+2024-09-11 08:07:32 - WARNING -  * Debugger is active!
+2024-09-11 08:07:32 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 08:08:00 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:00] "GET / HTTP/1.1" 200 -
+2024-09-11 08:08:01 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:01] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 08:08:01 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-11 08:08:02 - INFO - get_details method called
+2024-09-11 08:08:02 - ERROR - User not found
+2024-09-11 08:08:02 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:02] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 08:08:13 - INFO - get_details method called
+2024-09-11 08:08:13 - ERROR - User not found
+2024-09-11 08:08:13 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:13] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 08:08:16 - INFO - get_details method called
+2024-09-11 08:08:16 - ERROR - User not found
+2024-09-11 08:08:16 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:16] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 08:08:18 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:18] "GET / HTTP/1.1" 200 -
+2024-09-11 08:08:18 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:18] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 08:08:23 - INFO - get_details method called
+2024-09-11 08:08:23 - ERROR - User not found
+2024-09-11 08:08:23 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:23] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 08:08:28 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:28] "GET / HTTP/1.1" 200 -
+2024-09-11 08:08:28 - INFO - 127.0.0.1 - - [11/Sep/2024 08:08:28] "[36mGET /static/style/login.css HTTP/1.1[0m" 304 -
+2024-09-11 08:09:42 - INFO - get_details method called
+2024-09-11 08:09:42 - WARNING - Incorrect password
+2024-09-11 08:09:42 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:42] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-11 08:09:47 - INFO - get_details method called
+2024-09-11 08:09:47 - INFO - User found
+2024-09-11 08:09:47 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-11 08:09:47 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:47] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 08:09:47 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:47] "GET /static/style/home.css HTTP/1.1" 200 -
+2024-09-11 08:09:53 - INFO - add_post method called
+2024-09-11 08:09:53 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:53] "[32mPOST /home/post HTTP/1.1[0m" 302 -
+2024-09-11 08:09:54 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:54] "GET /home/home_page HTTP/1.1" 200 -
+2024-09-11 08:09:54 - INFO - 127.0.0.1 - - [11/Sep/2024 08:09:54] "[36mGET /static/style/home.css HTTP/1.1[0m" 304 -
+2024-09-11 08:10:17 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\utlis.py', reloading
+2024-09-11 08:10:18 - INFO -  * Restarting with stat
+2024-09-11 08:10:20 - INFO - create_app function called
+2024-09-11 08:10:20 - INFO - RegistrationService  initiated
+2024-09-11 08:10:20 - INFO - LoginServices initiated 
+2024-09-11 08:10:20 - INFO - Home initiated
+2024-09-11 08:10:20 - INFO - MessageServices  initiated
+2024-09-11 08:10:20 - INFO - ProfileServices  initiated
+2024-09-11 08:10:21 - INFO - create_app returning  app
+2024-09-11 08:10:21 - WARNING -  * Debugger is active!
+2024-09-11 08:10:21 - INFO -  * Debugger PIN: 516-966-723
+2024-09-11 08:11:53 - INFO -  * Detected change in 'D:\\MovedFromCtoD\\Desktop\\social_media_platfrom\\utlis.py', reloading
+2024-09-11 08:11:53 - INFO -  * Restarting with stat
+2024-09-11 08:11:54 - INFO - create_app function called
+2024-09-11 08:11:54 - INFO - LoginServices initiated 
+2024-09-11 08:12:50 - INFO - create_app function called
+2024-09-11 08:12:50 - INFO - LoginServices initiated 
+2024-09-11 08:12:50 - INFO - create_app returning  app
+2024-09-11 08:12:51 - INFO - create_app function called
+2024-09-11 08:12:51 - INFO - LoginServices initiated 
+2024-09-11 08:12:51 - INFO - create_app returning  app
+2024-09-11 08:13:01 - INFO - get_details method called
+2024-09-11 08:13:01 - ERROR - User not found
+2024-09-11 08:13:19 - INFO - get_details method called
+2024-09-11 08:13:19 - INFO - User found
+2024-09-11 08:21:51 - INFO - create_app function called
+2024-09-11 08:21:51 - INFO - LoginServices initiated 
+2024-09-11 08:21:51 - INFO - create_app returning  app
+2024-09-11 08:22:46 - INFO - create_app function called
+2024-09-11 08:22:46 - INFO - LoginServices initiated 
+2024-09-11 08:22:46 - INFO - create_app returning  app
+2024-09-11 08:23:09 - INFO - get_details method called
+2024-09-11 08:23:09 - INFO - User found
+2024-09-11 08:28:45 - INFO - create_app function called
+2024-09-11 08:28:45 - INFO - LoginServices initiated 
+2024-09-11 08:28:45 - INFO - create_app returning  app
+2024-09-11 08:28:46 - INFO - create_app function called
+2024-09-11 08:28:46 - INFO - LoginServices initiated 
+2024-09-11 08:28:46 - INFO - create_app returning  app
+2024-09-11 08:29:55 - INFO - get_details method called
+2024-09-11 08:29:55 - INFO - User found
+2024-09-11 08:35:18 - INFO - create_app function called
+2024-09-11 08:35:18 - INFO - LoginServices initiated 
+2024-09-11 08:35:18 - INFO - create_app returning  app
+2024-09-11 08:35:19 - INFO - create_app function called
+2024-09-11 08:35:19 - INFO - LoginServices initiated 
+2024-09-11 08:35:19 - INFO - create_app returning  app
+2024-09-11 08:40:16 - INFO - create_app function called
+2024-09-11 08:40:16 - INFO - LoginServices initiated 
+2024-09-11 08:40:16 - INFO - create_app returning  app
+2024-09-11 08:40:17 - INFO - create_app function called
+2024-09-11 08:40:17 - INFO - LoginServices initiated 
+2024-09-11 08:40:17 - INFO - create_app returning  app
+2024-09-11 08:40:30 - INFO - get_details method called
+2024-09-11 08:40:30 - INFO - User found
+2024-09-11 08:41:28 - INFO - create_app function called
+2024-09-11 08:41:28 - INFO - LoginServices initiated 
+2024-09-11 08:41:28 - INFO - create_app returning  app
+2024-09-11 08:41:29 - INFO - create_app function called
+2024-09-11 08:41:29 - INFO - LoginServices initiated 
+2024-09-11 08:41:29 - INFO - create_app returning  app
+2024-09-11 08:43:26 - INFO - create_app function called
+2024-09-11 08:43:26 - INFO - LoginServices initiated 
+2024-09-11 08:43:26 - INFO - create_app returning  app
+2024-09-11 08:43:27 - INFO - create_app function called
+2024-09-11 08:43:27 - INFO - LoginServices initiated 
+2024-09-11 08:43:27 - INFO - create_app returning  app
+2024-09-11 08:44:50 - INFO - create_app function called
+2024-09-11 08:44:50 - INFO - LoginServices initiated 
+2024-09-11 08:44:50 - INFO - create_app returning  app
+2024-09-11 08:44:51 - INFO - create_app function called
+2024-09-11 08:44:51 - INFO - LoginServices initiated 
+2024-09-11 08:44:51 - INFO - create_app returning  app
+2024-09-11 08:47:21 - INFO - create_app function called
+2024-09-11 08:47:21 - INFO - LoginServices initiated 
+2024-09-11 08:47:22 - INFO - create_app returning  app
+2024-09-11 08:47:22 - INFO - create_app function called
+2024-09-11 08:47:22 - INFO - LoginServices initiated 
+2024-09-11 08:47:23 - INFO - create_app returning  app
+2024-09-11 08:47:54 - INFO - create_app function called
+2024-09-11 08:47:54 - INFO - LoginServices initiated 
+2024-09-11 08:47:54 - INFO - create_app returning  app
+2024-09-11 08:47:55 - INFO - create_app function called
+2024-09-11 08:47:55 - INFO - LoginServices initiated 
+2024-09-11 08:47:55 - INFO - create_app returning  app
+2024-09-11 08:50:25 - INFO - create_app function called
+2024-09-11 08:50:25 - INFO - LoginServices initiated 
+2024-09-11 08:50:25 - INFO - create_app returning  app
+2024-09-11 08:50:27 - INFO - create_app function called
+2024-09-11 08:50:27 - INFO - LoginServices initiated 
+2024-09-11 08:50:27 - INFO - create_app returning  app
+2024-09-11 08:51:10 - INFO - create_app function called
+2024-09-11 08:51:10 - INFO - LoginServices initiated 
+2024-09-11 08:51:10 - INFO - create_app returning  app
+2024-09-11 08:52:01 - INFO - get_details method called
+2024-09-11 08:52:01 - INFO - User found
+2024-09-11 08:54:51 - INFO - get_details method called
+2024-09-11 08:54:51 - INFO - User found
+2024-09-11 08:55:55 - INFO - create_app function called
+2024-09-11 08:55:55 - INFO - LoginServices initiated 
+2024-09-11 08:55:55 - INFO - create_app returning  app
+2024-09-11 08:55:56 - INFO - create_app function called
+2024-09-11 08:55:56 - INFO - LoginServices initiated 
+2024-09-11 08:55:56 - INFO - create_app returning  app
+2024-09-11 08:56:18 - INFO - get_details method called
+2024-09-11 08:56:18 - INFO - User found
+2024-09-11 09:18:53 - INFO - create_app function called
+2024-09-11 09:18:54 - INFO - LoginServices initiated 
+2024-09-11 09:18:54 - INFO - create_app returning  app
+2024-09-11 09:18:55 - INFO - create_app function called
+2024-09-11 09:18:55 - INFO - LoginServices initiated 
+2024-09-11 09:18:55 - INFO - create_app returning  app
+2024-09-11 09:19:01 - INFO - get_details method called
+2024-09-11 09:19:01 - WARNING - Incorrect password
+2024-09-11 09:19:08 - INFO - get_details method called
+2024-09-11 09:19:08 - WARNING - Incorrect password
+2024-09-11 09:19:13 - INFO - get_details method called
+2024-09-11 09:19:13 - INFO - User found
+2024-09-11 09:19:30 - INFO - get_details method called
+2024-09-11 09:19:30 - WARNING - Incorrect password
+2024-09-11 09:19:36 - INFO - get_details method called
+2024-09-11 09:19:36 - INFO - User found
+2024-09-11 10:36:09 - INFO - get_details method called
+2024-09-11 10:36:09 - WARNING - Incorrect password
+2024-09-11 10:36:16 - INFO - get_details method called
+2024-09-11 10:36:16 - WARNING - Incorrect password
+2024-09-11 10:36:21 - INFO - get_details method called
+2024-09-11 10:36:21 - WARNING - Incorrect password
+2024-09-11 10:36:46 - INFO - get_details method called
+2024-09-11 10:36:46 - WARNING - Incorrect password
+2024-09-11 10:36:51 - INFO - get_details method called
+2024-09-11 10:36:51 - INFO - User found
+2024-09-11 10:54:53 - INFO - create_app function called
+2024-09-11 10:54:54 - INFO - LoginServices initiated 
+2024-09-11 10:54:54 - INFO - create_app returning  app
+2024-09-11 10:56:39 - INFO - create_app function called
+2024-09-11 10:56:39 - INFO - LoginServices initiated 
+2024-09-11 10:56:40 - INFO - create_app returning  app
+2024-09-11 10:56:40 - INFO - create_app function called
+2024-09-11 10:56:40 - INFO - LoginServices initiated 
+2024-09-11 10:56:41 - INFO - create_app returning  app
+2024-09-11 10:56:52 - INFO - get_details method called
+2024-09-11 10:56:52 - WARNING - Incorrect password
+2024-09-11 10:56:56 - INFO - get_details method called
+2024-09-11 10:56:56 - INFO - User found

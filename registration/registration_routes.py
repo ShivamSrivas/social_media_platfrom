@@ -1,7 +1,6 @@
-from flask import Blueprint, request, Response, render_template
+from flask import Blueprint, request, Response, render_template, redirect, url_for
 from registration.services.Registration_services import RegistrationService
 
-# Define the blueprint
 registration_bp = Blueprint('registration', __name__)
 
 
@@ -10,21 +9,20 @@ def registration_page():
     return render_template('registration.html')
 
 
-# Create a new registration route
 @registration_bp.route('/new_registrations', methods=['POST'])
 def new_registration():
     try:
+        response = None
         if request.method == "POST":
             name = request.form.get('name')
             age = request.form.get('age')
             email = request.form.get('email')
             password = request.form.get('password')
-
-        # Pass the form data to the RegistrationService
             new_registrations = RegistrationService(name, age, email, password)
-            new_registrations.register()
-
-        return Response("Registration successful", status=200)
-
+            response = new_registrations.register()
+            if response['status']:
+                return redirect(url_for("login.login_page"))
+            return Response(f"Registration unsuccessful {response['message']}", status=500)
+        return Response("Registration was not done", status=500)
     except Exception as error:
         return Response(f"Error occurred: {error}", status=500)

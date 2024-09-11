@@ -2,29 +2,19 @@ import logging as log
 
 
 def logger(path: str, message: str, intention: str):
-    """
-    Logs a messages to the specified file with a given intention.
+    logs = log.getLogger(path)
 
-    Args:
-        path (str): The file path where logs should be written.
-        message (str): The messages to log.
-        intention (str): The intention of the log (e.g., 'INFO', 'ERROR').
+    if not logs.handlers:
+        logs.setLevel(log.DEBUG)
 
-    Returns:
-        None
-    """
-    # Define the logging configuration
-    log.basicConfig(
-        filename=path,
-        level=log.DEBUG,  # Log all levels from DEBUG and above
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S'
-    )
+        file_handler = log.FileHandler(path)
+        file_handler.setLevel(log.DEBUG)
 
-    # Get a logger instance
-    logs = log.getLogger()
+        formatter = log.Formatter('%(asctime)s - %(levelname)s - %(message)s', '%Y-%m-%d %H:%M:%S')
+        file_handler.setFormatter(formatter)
 
-    # Log the messages based on the intention
+        logs.addHandler(file_handler)
+
     if intention.upper() == 'DEBUG':
         logs.debug(message)
     elif intention.upper() == 'INFO':

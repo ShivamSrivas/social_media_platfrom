@@ -1,0 +1,40 @@
+2024-09-11 08:11:54 - INFO - RegistrationService  initiated
+2024-09-11 08:12:50 - INFO - RegistrationService  initiated
+2024-09-11 08:12:51 - INFO - RegistrationService  initiated
+2024-09-11 08:21:51 - INFO - RegistrationService  initiated
+2024-09-11 08:22:46 - INFO - RegistrationService  initiated
+2024-09-11 08:28:45 - INFO - RegistrationService  initiated
+2024-09-11 08:28:46 - INFO - RegistrationService  initiated
+2024-09-11 08:35:18 - INFO - RegistrationService  initiated
+2024-09-11 08:35:19 - INFO - RegistrationService  initiated
+2024-09-11 08:40:16 - INFO - RegistrationService  initiated
+2024-09-11 08:40:17 - INFO - RegistrationService  initiated
+2024-09-11 08:41:28 - INFO - RegistrationService  initiated
+2024-09-11 08:41:29 - INFO - RegistrationService  initiated
+2024-09-11 08:43:26 - INFO - RegistrationService  initiated
+2024-09-11 08:43:27 - INFO - RegistrationService  initiated
+2024-09-11 08:44:50 - INFO - RegistrationService  initiated
+2024-09-11 08:44:51 - INFO - RegistrationService  initiated
+2024-09-11 08:47:21 - INFO - RegistrationService  initiated
+2024-09-11 08:47:22 - INFO - RegistrationService  initiated
+2024-09-11 08:47:54 - INFO - RegistrationService  initiated
+2024-09-11 08:47:55 - INFO - RegistrationService  initiated
+2024-09-11 08:49:18 - INFO - register  method called
+2024-09-11 08:49:18 - INFO - Users Successfully registered
+2024-09-11 08:50:25 - INFO - RegistrationService  initiated
+2024-09-11 08:50:27 - INFO - RegistrationService  initiated
+2024-09-11 08:51:10 - INFO - RegistrationService  initiated
+2024-09-11 08:51:12 - INFO - register  method called
+2024-09-11 08:51:12 - INFO - An error occurred: (MySQLdb.IntegrityError) (1062, "Duplicate entry 'ram@123gmail.com' for key 'users.email'")
+[SQL: INSERT INTO users (name, age, email, password, date_time) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('ram', '12', 'ram@123gmail.com', 'ram', datetime.datetime(2024, 9, 11, 3, 21, 12, 464441))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-11 08:51:50 - INFO - register  method called
+2024-09-11 08:51:50 - INFO - Users Successfully registered
+2024-09-11 08:55:55 - INFO - RegistrationService  initiated
+2024-09-11 08:55:56 - INFO - RegistrationService  initiated
+2024-09-11 09:18:54 - INFO - RegistrationService  initiated
+2024-09-11 09:18:55 - INFO - RegistrationService  initiated
+2024-09-11 10:54:53 - INFO - RegistrationService  initiated
+2024-09-11 10:56:39 - INFO - RegistrationService  initiated
+2024-09-11 10:56:40 - INFO - RegistrationService  initiated

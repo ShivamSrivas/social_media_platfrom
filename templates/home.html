@@ -14,29 +14,27 @@
                 <li><a href="{{ url_for('home.home_page')}}">Home</a></li>
                 <li><a href="{{ url_for('profiles.profile_page')}}">Profile</a></li>
                 <li><a href="{{ url_for('messages.message_page')}}">Messages</a></li>
-                <li><a href="{{ url_for('notifications.notifications_page')}}">Notifications</a></li>
-                <li><a href="">Logout</a></li>
+                <li><a href="{{url_for('login.login_page')}}">Logout</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Friends</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </aside>
-
-        <main class="feed">
-<form action="{{ url_for('home.post') }}" method="POST" class="new-post">
-        <div class="new-post">
-            <textarea placeholder="What's on your mind?" name="post_content"></textarea>
+    <div class="upper-container">
+        <form action="{{ url_for('home.post') }}" method="POST" class="new-post">
+            <textarea placeholder="What's on your mind?" name="post_content" class="textarea"></textarea>
             <button type="submit" class="post-btn">Post</button>
-        </div>
 </form>
+
+            <div class="trending">
+                <h3>Trending Topics</h3>
+                <ul>
+                    <li><a href="{{ url_for('home.ai_updates') }}">#TechNews</a></li>
+                    <li><a href="{{ url_for('home.climate_change_news') }}">#AIUpdates</a></li>
+                    <li><a href="{{ url_for('home.tech_news') }}">#ClimateAction</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="container">
+        <main class="feed">
                {%for post in post_content%}
             <div class="post">
                 <div class="post-header">
@@ -48,29 +46,10 @@
 
                 </div>
                 <p>{{post.content}}</p>
-                <div class="post-actions">
-                    <button>{{post.like}}Like</button>
-                </div>
             </div>
             {% endfor %}
         </main>
         <aside class="right-section">
-            <div class="trending">
-                <h3>Trending Topics</h3>
-                <ul>
-                    <li><a href="#">#TechNews</a></li>
-                    <li><a href="#">#AIUpdates</a></li>
-                    <li><a href="#">#ClimateAction</a></li>
-                </ul>
-            </div>
-            <div class="friend-suggestions">
-                <h3>Friend Suggestions</h3>
-                <ul>
-                    <li><a href="#">Mike Johnson</a></li>
-                    <li><a href="#">Sarah Connor</a></li>
-                    <li><a href="#">Emily Davis</a></li>
-                </ul>
-            </div>
         </aside>
     </div>
 </body>
